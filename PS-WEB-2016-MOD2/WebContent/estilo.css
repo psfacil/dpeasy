@@ -1,0 +1,55 @@
+body{
+	font-family: Tahoma, Sans-serif;
+	margin: 0px;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	display: inline;
+	margin: 10px;
+}
+a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu {
+	text-align: right;
+	background-color: navy;
+	padding: 2px;
+}
+.busca{
+	background-color: #b9affc;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+select{
+	width: 50px;
+}
+.resultado{
+	margin: 10px;
+	padding: 10px;	
+}
+.rodape{
+	background-color: navy;
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+h2{
+	color: navy;
+}
+table{
+	width: 100%;	
+	text-align: center;
+	border: 2px solid navy;
+}
+th{
+	background-color: navy;
+	color: white;
+}
+.cor{
+	background-color: #b9affc;
+}

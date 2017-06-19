@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FIAPTur</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script type="text/javascript" src="validacao.js"></script>
+</head>
+<body>
+	<div>
+		<img src="logo.png" alt="logo" width="150">
+	</div>
+	<div class="menu">
+		<ul>
+			<li> <a href="#">Hotéis</a> </li>
+			<li> <a href="#">Pacotes</a> </li>
+			<li> <a href="#">Carros</a> </li>
+		</ul>
+	</div>
+	<div>
+		<div class="busca">
+			<form action="buscar" method="get">
+				<h2>Cruzeiros</h2>
+				<div>
+					<label for="origem" id="labelOrigem">Origem</label>
+					<input type="text" name="origem" id="origem" required>
+				
+					<label id="labelDestino">Destino</label>
+					<input type="text" name="destino" id="destino" required>
+					
+					<label id="labelIda">Ida</label>
+					<input type="text" name="ida" id="ida" required>
+					
+					<label id="labelVolta">Volta</label>
+					<input type="text" name="volta" id="volta" required>
+					
+					<label>Adultos</label>
+					<select name="adultos">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<label>Crianças</label>
+					<select name="crianca">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<input type="submit" value="Pesquisar" onclick="validar()">
+				</div>
+			</form>
+		</div>
+		<div class="resultado">
+			<h2>Resultado da Busca</h2>
+			<table>
+				<tr>
+					<th colspan="4">PORTO DE SAÍDA</th>
+					<td rowspan="8" class="cor">					
+						R$ 2500,00 <br>
+						<input type="button" value="COMPRAR">
+						
+					</td>
+				</tr>
+				<tr>
+					<th>IDA</th>
+					<th>SANTOS</th>
+					<th>RIO DE JANEIRO</th>
+					<th>Paradas</th>
+					
+				</tr>
+				<tr>
+					<td> <input type="radio" name="opcao1"> </td>
+					<td> SAÍDA 03:25 </td>
+					<td> CHEGADA 15:15</td>
+					<td> Direto </td>
+				</tr>
+				<tr>
+					<td> <input type="radio" name="opcao1"> </td>
+					<td> SAÍDA 02:00 </td>
+					<td> CHEGADA 23:15</td>
+					<td> 1 Parada </td>
+				</tr>
+				<tr>
+					<th colspan="4">PORTO DA VOLTA</th>
+				</tr>
+				<tr>
+					<th>VOLTA</th>
+					<th>RIO DE JANEIRO</th>
+					<th>SANTOS</th>
+					<th>Paradas</th>
+				</tr>
+				<tr>
+					<td> <input type="radio" name="opcao2"> </td>
+					<td> SAÍDA 03:25 </td>
+					<td> CHEGADA 15:15</td>
+					<td> Direto </td>
+				</tr>
+				<tr>
+					<td> <input type="radio" name="opcao2"> </td>
+					<td> SAÍDA 02:00 </td>
+					<td> CHEGADA 23:15</td>
+					<td> 1 Parada </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="rodape">
+		<p>Todos os Direitos Reservados - 2016</p>
+	</div>
+</body>
+</html>

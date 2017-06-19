@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* ESTILOS GLOBAIS */
+body{
+  background: red;
+  font-family: Verdana, sans-serif;
+  background: linear-gradient(#111 20%, #ff0000 90%);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+body a{
+  text-decoration: none;
+  color:blue;
+  font-weight: bolder;
+}
+/* CONTAINER PRINCIPAL */
+.container{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* CABEÇALHO */
+.cabecalho{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 40px;
+  font-size: 40px;
+  position: relative;
+}
+
+.cabecalho ul{
+  list-style-type: none;
+}
+
+.cabecalho li{
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* PLUS */
+.cabecalho a{
+  color:blue;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: color 1s, background-color 1s;
+}
+.cabecalho li:hover a{
+  background-color: blue;
+  color: #111;
+  transition:color 1s;
+}
+.corpo span{
+  font-weight: bolder;
+}
+/* CORPO E CONTEÚDO PRINCIPAL */
+.corpo figure{
+  position: relative;
+  border: 2px solid #111;
+  box-shadow: 2px 2px 5px #111;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px 5px 150px 5px;
+}
+
+.corpo figcaption{
+  position: absolute;
+
+}
+/* RODAPÉ */
+.rodape{
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+}
